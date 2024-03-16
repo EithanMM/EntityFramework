@@ -1,0 +1,11 @@
+﻿Add migration
+Add-Migration "migrationName" -StartupProject EntityFramework -Project Store.Data -Context TestDatabaseDbContext
+
+Remove Migration
+Remove-Migration  -StartupProject EntityFramework -Project Store.Data -Context TestDatabaseDbContext
+
+Update database with latest migration
+Update-Database -StartupProject EntityFramework -Project Store.Data -Context TestDatabaseDbContext
+
+Update database with specific migration
+Update-Database  "migrationName" -StartupProject EntityFramework -Project Store.Data -Context TestDatabaseDbContext

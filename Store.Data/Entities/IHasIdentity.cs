@@ -1,5 +1,5 @@
 ﻿namespace Store.Data.Entities;
-public interface IIdentity
+public interface IHasIdentity
 {
     int Identity { get; }
 }
