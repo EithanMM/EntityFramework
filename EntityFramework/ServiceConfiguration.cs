@@ -11,6 +11,7 @@ public static class ServiceConfiguration
         services.Scan(scan => scan.FromCallingAssembly().ScanAssembly());
 
         DataDependencies.Register(services, configuration);
+        ServiceDependencies.Register(services, configuration);
         return services;
     }
 

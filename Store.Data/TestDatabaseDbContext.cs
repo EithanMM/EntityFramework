@@ -9,7 +9,7 @@ public class TestDatabaseDbContext(DbContextOptions<TestDatabaseDbContext> optio
     public DbSet<StoreEntity> Stores => Set<StoreEntity>();
 
 
-    // Could add interceptors (exampl, classes that inherit from SaveChangesInterceptor)
+    // Could add interceptors (example, classes that inherit from SaveChangesInterceptor)
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
     }
