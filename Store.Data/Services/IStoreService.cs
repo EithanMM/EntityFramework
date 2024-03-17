@@ -1,8 +1,9 @@
-﻿using Store.Data.Entities.Store;
+﻿using Store.Core.Common;
+using Store.Core.Models;
 
 namespace Store.Data.Services;
 
 public interface IStoreService
 {
-    Task<IEnumerable<StoreEntity>> GetStoresAsync();
+    Task<ResponseResult<PaginatedList<StoreModel>>> GetStoresAsync(CancellationToken cancellationToken);
 }
